@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wines | Sher Wine Shop</title>
+<meta name="description" content="Browse red, white and sparkling wines with tasting notes and prices.">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<!-- Google Analytics 4: replace G-XXXXXXXXXX with your Measurement ID -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());
+gtag('config','G-XXXXXXXXXX');
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="wrap bar">
+<a class="logo" href="index.html" aria-label="Sher Wine Shop home"><img src="images/favicon.svg" alt="" width="34" height="34"><span>Sher Wine Shop</span></a>
+<button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Open menu">Menu</button>
+<nav id="nav" aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="products.html" aria-current="page">Wines</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+</div>
+</header>
+<main id="main">
+<section class="page-head"><div class="wrap"><h1>Our wines</h1><p class="lead">Six bottles we keep coming back to. Filter by style, then open any wine for tasting notes.</p></div></section>
+<section class="section"><div class="wrap">
+<div class="filters" role="group" aria-label="Filter wines by category"><button class="chip active" data-filter="all">All</button><button class="chip" data-filter="Red">Red</button><button class="chip" data-filter="White">White</button><button class="chip" data-filter="Sparkling">Sparkling</button></div>
+<div class="grid" id="product-grid"><article class="card" data-category="Red">
+<img src="images/wine-1.svg" alt="Bottle of Rioja Reserva" loading="lazy" width="400" height="400">
+<div class="card-body"><p class="cat">Red</p><h3>Rioja Reserva</h3><p>Aged 24 months in oak. Dark cherry, vanilla and warm spice.</p>
+<div class="buy"><span class="price">$24.00</span><button class="btn small" data-id="WINE-01" data-name="Rioja Reserva" data-category="Red" data-price="24.0" data-notes="Dark cherry, vanilla, cedar. Pairs with lamb and aged cheese." data-origin="Rioja, Spain">View details</button></div></div></article><article class="card" data-category="Red">
+<img src="images/wine-2.svg" alt="Bottle of Cabernet Sauvignon" loading="lazy" width="400" height="400">
+<div class="card-body"><p class="cat">Red</p><h3>Cabernet Sauvignon</h3><p>Full-bodied and structured, with blackcurrant and cocoa.</p>
+<div class="buy"><span class="price">$32.00</span><button class="btn small" data-id="WINE-02" data-name="Cabernet Sauvignon" data-category="Red" data-price="32.0" data-notes="Blackcurrant, cocoa, firm tannins. Pairs with steak." data-origin="Napa Valley, USA">View details</button></div></div></article><article class="card" data-category="Red">
+<img src="images/wine-3.svg" alt="Bottle of Pinot Noir" loading="lazy" width="400" height="400">
+<div class="card-body"><p class="cat">Red</p><h3>Pinot Noir</h3><p>Light, silky and bright, with red berries and forest floor.</p>
+<div class="buy"><span class="price">$28.00</span><button class="btn small" data-id="WINE-03" data-name="Pinot Noir" data-category="Red" data-price="28.0" data-notes="Raspberry, earth, soft tannins. Pairs with salmon and mushrooms." data-origin="Willamette Valley, USA">View details</button></div></div></article><article class="card" data-category="White">
+<img src="images/wine-4.svg" alt="Bottle of Sauvignon Blanc" loading="lazy" width="400" height="400">
+<div class="card-body"><p class="cat">White</p><h3>Sauvignon Blanc</h3><p>Crisp and green, with lime, gooseberry and fresh-cut grass.</p>
+<div class="buy"><span class="price">$19.00</span><button class="btn small" data-id="WINE-04" data-name="Sauvignon Blanc" data-category="White" data-price="19.0" data-notes="Lime, gooseberry, herbs. Pairs with goat cheese and seafood." data-origin="Marlborough, New Zealand">View details</button></div></div></article><article class="card" data-category="White">
+<img src="images/wine-5.svg" alt="Bottle of Chardonnay" loading="lazy" width="400" height="400">
+<div class="card-body"><p class="cat">White</p><h3>Chardonnay</h3><p>Round and buttery, with baked apple and toasted oak.</p>
+<div class="buy"><span class="price">$22.00</span><button class="btn small" data-id="WINE-05" data-name="Chardonnay" data-category="White" data-price="22.0" data-notes="Apple, butter, toast. Pairs with roast chicken." data-origin="Burgundy, France">View details</button></div></div></article><article class="card" data-category="Sparkling">
+<img src="images/wine-6.svg" alt="Bottle of Brut Rosé Sparkling" loading="lazy" width="400" height="400">
+<div class="card-body"><p class="cat">Sparkling</p><h3>Brut Rosé Sparkling</h3><p>Fine bubbles with strawberry, citrus peel and a dry finish.</p>
+<div class="buy"><span class="price">$29.00</span><button class="btn small" data-id="WINE-06" data-name="Brut Rosé Sparkling" data-category="Sparkling" data-price="29.0" data-notes="Strawberry, citrus, brioche. Pairs with sushi and celebrations." data-origin="Champagne, France">View details</button></div></div></article></div></div></section>
+<dialog id="detail" aria-labelledby="d-name"><form method="dialog"><button class="close" aria-label="Close details">&times;</button></form>
+<p class="cat" id="d-cat"></p><h2 id="d-name"></h2><p id="d-origin" class="muted"></p><p id="d-notes"></p><p class="price" id="d-price"></p>
+<p class="muted small-note">Demo shop: checkout is not available.</p></dialog>
+</main>
+<footer class="site-footer">
+<div class="wrap foot">
+<div><p class="logo-text">Sher Wine Shop</p><p>Small-lot wines, delivered to adults 21 and over.</p></div>
+<div><p class="fh">Visit</p><p>12 Cellar Lane, Napa, CA 94558<br><a href="mailto:hello@sherwineshop.example">hello@sherwineshop.example</a><br>+1 (555) 014-2290</p></div>
+<div><p class="fh">Follow</p><p><a href="#" data-social="instagram">Instagram</a><br><a href="#" data-social="facebook">Facebook</a><br><a href="#" data-social="x">X</a></p></div>
+</div>
+<p class="wrap legal">Please drink responsibly. Demo website for a Marketing Analytics course; no real orders are taken. &copy; 2026 Sher Wine Shop.</p>
+</footer>
+<div id="age-gate" class="age-gate" role="dialog" aria-modal="true" aria-labelledby="age-title" hidden>
+<div class="age-box"><h2 id="age-title">Are you 21 or older?</h2><p>Sher Wine Shop is for adult wine drinkers only.</p>
+<div class="btn-row"><button class="btn" id="age-yes">Yes, I am 21+</button><a class="btn ghost" href="https://www.responsibility.org/" rel="noopener">No, leave</a></div></div></div>
+<script src="script.js"></script>
+</body>
+</html>
